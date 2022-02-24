@@ -7,3 +7,5 @@
 **Day 3**: [Treasure Island](./day-003/)
 
 **Day 4**: [Rock, Paper, Scissors](./day-004/)
+
+**Day 5**: [Random Password Generator](./day-005/)
