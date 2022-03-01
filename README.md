@@ -15,3 +15,5 @@
 **Day 7**: [Hangman](./day-007/)
 
 **Day 8**: [Caesar Cipher](./day-008/)
+
+**Day 9**: [Silent Auction](./day-009/)
