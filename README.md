@@ -17,3 +17,5 @@
 **Day 8**: [Caesar Cipher](./day-008/)
 
 **Day 9**: [Silent Auction](./day-009/)
+
+**Day 10**: [Calculator](./day-010/)
