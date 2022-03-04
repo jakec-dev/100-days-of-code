@@ -21,3 +21,5 @@
 **Day 10**: [Calculator](./day-010/)
 
 **Day 11**: [Blackjack](./day-011/)
+
+**Day 12**: [Number Guessing Game](./day-012/)
