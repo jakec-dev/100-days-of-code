@@ -1,5 +1,7 @@
 # 100 Days of Code
 
+## Beginner Level
+
 **Day 1**: [Band Name Generator](./day-001/)
 
 **Day 2**: [Tip Calculator](./day-002/)
@@ -25,3 +27,5 @@
 **Day 12**: [Number Guessing Game](./day-012/)
 
 **Day 13**: Debugging (no new projects created)
+
+**Day 14**: [Higher Lower Game](./day-014/)
