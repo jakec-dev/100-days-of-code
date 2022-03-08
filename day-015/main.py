@@ -52,7 +52,6 @@ def adjust_resources(item, resources_balance):
 def check_availability(item_selected, r_balance):
     insufficient_ingredients = []
     resources_remaining_after = adjust_resources(item_selected, r_balance)
-    print(f"resources_remaining_after: {resources_remaining_after}")
     for i in resources_remaining_after:
         if resources_remaining_after[i] < 0:
             insufficient_ingredients.append(i)
@@ -70,20 +69,18 @@ while run_app == True:
     elif selection == "off":
         run_app = False
     elif selection in MENU:
-        insufficient_ingredients = check_availability(selection, resources)
-        print(f"insufficient_ingredients: {insufficient_ingredients}")
-        if len(insufficient_ingredients) > 0:
-            print(f"Sorry, there is not enough {' and '.join(insufficient_ingredients)}")
+        amount_paid = insert_coins()
+        price = MENU[selection]["cost"]
+        change = amount_paid - price
+        if change < 0:
+            print("Not enough coins inserted. Please try again")
         else:
-            amount_paid = insert_coins()
-            price = MENU[selection]["cost"]
-            change = amount_paid - price
-            if change < 0:
-                print("Not enough coins inserted. Please try again")
+            insufficient_ingredients = check_availability(selection, resources)
+            if len(insufficient_ingredients) > 0:
+                print(f"Sorry, there is not enough {' and '.join(insufficient_ingredients)}")
             else:
                 print(f"Here is your ${format(change, '.2f')} in change.")
                 print(f"Here is your {selection}. Enjoy!")
                 balance += price
-            #resources = adjust_resources(selection, resources)
     else:
         print("Wrong selection, try again.")
