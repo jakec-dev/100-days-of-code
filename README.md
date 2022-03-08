@@ -29,3 +29,7 @@
 **Day 13**: Debugging (no new projects created)
 
 **Day 14**: [Higher Lower Game](./day-014/)
+
+## Intermediate Level
+
+**Day 15**: [Coffee Machine](./day-015/)
