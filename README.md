@@ -33,3 +33,5 @@
 ## Intermediate Level
 
 **Day 15**: [Coffee Machine](./day-015/)
+
+**Day 16**: [Coffee Machine (OOP version)](./day-016/)
