@@ -35,3 +35,5 @@
 **Day 15**: [Coffee Machine](./day-015/)
 
 **Day 16**: [Coffee Machine (OOP version)](./day-016/)
+
+**Day 17**: [True/False Quiz](./day-017/)
