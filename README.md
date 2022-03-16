@@ -37,3 +37,5 @@
 **Day 16**: [Coffee Machine (OOP version)](./day-016/)
 
 **Day 17**: [True/False Quiz](./day-017/)
+
+**Day 18**: [Hirst Spot Painting](./day-018/)
