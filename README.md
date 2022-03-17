@@ -39,3 +39,5 @@
 **Day 17**: [True/False Quiz](./day-017/)
 
 **Day 18**: [Hirst Spot Painting](./day-018/)
+
+**Day 19**: [Turtle Race](./day-019/)
