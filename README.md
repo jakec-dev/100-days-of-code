@@ -41,3 +41,5 @@
 **Day 18**: [Hirst Spot Painting](./day-018/)
 
 **Day 19**: [Turtle Race](./day-019/)
+
+**Day 20**: [Snake (part 1)](./day-020/)
