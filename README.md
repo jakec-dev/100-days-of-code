@@ -43,3 +43,5 @@
 **Day 19**: [Turtle Race](./day-019/)
 
 **Day 20**: [Snake (part 1)](./day-020/)
+
+**Day 21**: [Snake (part 2)](./day-021/)
