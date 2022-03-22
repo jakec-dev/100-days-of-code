@@ -45,3 +45,5 @@
 **Day 20**: [Snake (part 1)](./day-020/)
 
 **Day 21**: [Snake (part 2)](./day-021/)
+
+**Day 22**: [Pong](./day-022/)
