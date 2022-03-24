@@ -49,3 +49,5 @@
 **Day 22**: [Pong](./day-022/)
 
 **Day 23**: [Frogger](./day-023/)
+
+**Day 24**: [Mail Merge](./day-024)
