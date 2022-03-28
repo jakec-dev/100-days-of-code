@@ -50,4 +50,6 @@
 
 **Day 23**: [Frogger](./day-023/)
 
-**Day 24**: [Mail Merge](./day-024)
+**Day 24**: [Mail Merge](./day-024/)
+
+**Day 25**: [USA States Game](./day-025/)
