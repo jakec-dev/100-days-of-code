@@ -1,11 +1,9 @@
 import pandas
 
-# TODO 1. Create a dictionary in this format: {"A": "Alfa", "B": "Bravo"}
-with open("nato_phonetic_alphabet.csv") as data:
-    phonetic_array = data.readlines()
+phonetic_dataframe = pandas.read_csv("nato_phonetic_alphabet.csv")
+phonetic_dict = {row.letter: row.code for (index, row) in
+                 phonetic_dataframe.iterrows()}
 
-phonetic_dataframe = pandas.DataFrame(phonetic_array)
-
-print(phonetic_dataframe)
-
-# TODO 2. Create a list of the phonetic code words from a word that the user inputs.
+word = input("Enter a word: ").upper()
+phonetic_word = [phonetic_dict[letter] for letter in word]
+print(phonetic_word)
