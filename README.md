@@ -53,3 +53,5 @@
 **Day 24**: [Mail Merge](./day-024/)
 
 **Day 25**: [USA States Game](./day-025/)
+
+**Day 26**: [Phonetic Alphabet](./day-026/)
