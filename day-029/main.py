@@ -10,6 +10,9 @@ def save_password():
     website = entry_website.get()
     username = entry_email_uname.get()
     password = entry_password.get()
+    messagebox.askokcancel(title=website, message=f"These are the details \
+        entered:\nEmail/username: {username}\nPassword: {password}\nIs it\
+            ")
     with open("./data.txt", mode="a") as data:
         data.write(f"{website} | {username} | {password}\n")
     entry_website.delete(0, END)
