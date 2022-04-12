@@ -5,5 +5,9 @@ phonetic_dict = {row.letter: row.code for (index, row) in
                  phonetic_dataframe.iterrows()}
 
 word = input("Enter a word: ").upper()
-phonetic_word = [phonetic_dict[letter] for letter in word]
-print(phonetic_word)
+try:
+    phonetic_word = [phonetic_dict[letter] for letter in word]
+except KeyError:
+    print("Sorry, only letters in the alphabet please")
+else:
+    print(phonetic_word)
