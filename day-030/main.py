@@ -47,13 +47,19 @@ def save_password():
         messagebox.showinfo(title="Oops", message="Please make sure you \
 haven't left any fields empty.")
     else:
-        with open("./data.json", mode="r") as data_file:
-            data = json.load(data_file)
+        try:
+            with open("./data.json", mode="r") as data_file:
+                data = json.load(data_file)
+        except FileNotFoundError:
+            with open("./data.json", mode="w") as data_file:
+                json.dump(new_data, data_file, indent=4)
+        else:
             data.update(new_data)
-        with open("./data.json", mode="w") as data_file:
-            json.dump(data, data_file, indent=4)
-        entry_website.delete(0, END)
-        entry_password.delete(0, END)
+            with open("./data.json", mode="w") as data_file:
+                json.dump(data, data_file, indent=4)
+        finally:
+            entry_website.delete(0, END)
+            entry_password.delete(0, END)
 
 
 # ---------------------------- UI SETUP ------------------------------------ #
