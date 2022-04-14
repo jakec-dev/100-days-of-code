@@ -62,6 +62,27 @@ haven't left any fields empty.")
             entry_password.delete(0, END)
 
 
+# ---------------------------- SEARCH WEBSITE ------------------------------ #
+
+
+def search():
+    website = entry_website.get()
+    try:
+        with open("./data.json", mode="r") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Oops", message="No Data File Found")
+    else:
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title=website, message=f"Email: {email}\n\
+                Password: {password}")
+        else:
+            messagebox.showinfo(title="Oops", message="No details for the \
+website exists")
+
+
 # ---------------------------- UI SETUP ------------------------------------ #
 
 window = Tk()
@@ -77,8 +98,11 @@ label_website = Label(text="Website:")
 label_website.grid(column=0, row=1)
 
 entry_website = Entry()
-entry_website.grid(column=1, row=1, columnspan=2, sticky="EW")
+entry_website.grid(column=1, row=1, sticky="EW")
 entry_website.focus()
+
+search_btn = Button(text="Search", command=search)
+search_btn.grid(column=2, row=1, sticky="EW")
 
 label_email_uname = Label(text="Email/Username:")
 label_email_uname.grid(column=0, row=2)

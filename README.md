@@ -61,3 +61,5 @@
 **Day 28**: [Pomodoro Timer](./day-028/)
 
 **Day 29**: [Random Password Generator](./day-029/)
+
+**Day 30**: [Random Password Generator (with JSON data and error handling)](./day-030/)
